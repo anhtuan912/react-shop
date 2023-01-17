@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Redirect from 'react-router-dom/Redirect'
+import { Navigate } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { loadStripe } from '@stripe/stripe-js'
 import { Elements } from '@stripe/react-stripe-js'
@@ -191,7 +191,7 @@ class Checkout extends Component {
 			telephone: this.state.telephone}
 
 		if (this.state.redirect) {
-			return <Redirect to="/" />
+			return <Navigate to="/" />
 		}
 
 		return (

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import { connect } from 'react-redux'
-import { Redirect } from 'react-router-dom' 
+import { Navigate } from 'react-router-dom' 
 import Dropdown from 'react-bootstrap/Dropdown'
 
 import Login from './Login'
@@ -75,7 +75,7 @@ class Authentification extends Component {
         const redirect = this.state.redirect
 
         if (redirect) {
-            return <Redirect to={`/${redirect}`} />
+            return <Navigate to={`/${redirect}`} />
         }
 
         return (
