@@ -6,7 +6,7 @@ import { Elements } from '@stripe/react-stripe-js'
 import CheckoutForm from '../stripe/CheckoutForm'
 import AddressCard from '../stripe/AddressCard'
 
-const promise = loadStripe(process.env.MIX_STRIPE_KEY);
+const promise = loadStripe(`${process.env.MIX_STRIPE_KEY}`);
 
 class Checkout extends Component {
 	constructor(props) {

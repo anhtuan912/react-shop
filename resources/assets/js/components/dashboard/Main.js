@@ -8,9 +8,9 @@ import NewProduct from './pages/NewProduct'
 const Main = () => (
     <main>
         <Routes>
-            <Route exact path='/dashboard/' component={Home}/>
-            <Route exact path='/dashboard/products' component={Products}/>
-            <Route exact path='/dashboard/new-product' component={NewProduct}/>
+            <Route exact path='/dashboard/' component={<Home/>}/>
+            <Route exact path='/dashboard/products' component={<Products/>}/>
+            <Route exact path='/dashboard/new-product' component={<NewProduct/>}/>
         </Routes>
     </main>
 )
